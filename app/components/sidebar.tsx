@@ -230,8 +230,8 @@ export function SideBar(props: { className?: string }) {
       {...props}
     >
       <SideBarHeader
-        title="NextChat"
-        subTitle="Build your own AI assistant."
+        title="Chat-GPT"
+        subTitle="浩子的AI助手"
         logo={<ChatGptIcon />}
         shouldNarrow={shouldNarrow}
       >
@@ -305,6 +305,7 @@ export function SideBar(props: { className?: string }) {
                 />
               </Link>
             </div>
+            {false &&
             <div className={styles["sidebar-action"]}>
               <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
                 <IconButton
@@ -314,6 +315,7 @@ export function SideBar(props: { className?: string }) {
                 />
               </a>
             </div>
+            }
           </>
         }
         secondaryAction={
