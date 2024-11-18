@@ -253,7 +253,7 @@ Latex inline: \\(x^2\\)
 Latex block: $$e=mc^2$$
 `;
 
-export const SUMMARIZE_MODEL = "gpt-4o-mini";
+export const SUMMARIZE_MODEL = "gpt-4o-mini"; // wang-model
 export const GEMINI_SUMMARIZE_MODEL = "gemini-pro";
 
 export const KnowledgeCutOffDate: Record<string, string> = {
@@ -291,6 +291,8 @@ export const DEFAULT_TTS_VOICES = [
 ];
 
 const openaiModels = [
+  // wang-model
+  "gpt-4o-mini",
   "gpt-3.5-turbo",
   "gpt-3.5-turbo-1106",
   "gpt-3.5-turbo-0125",
@@ -304,7 +306,6 @@ const openaiModels = [
   "gpt-4o-2024-05-13",
   "gpt-4o-2024-08-06",
   "chatgpt-4o-latest",
-  "gpt-4o-mini",
   "gpt-4o-mini-2024-07-18",
   "gpt-4-vision-preview",
   "gpt-4-turbo-2024-04-09",
